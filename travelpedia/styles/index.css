@@ -1,0 +1,183 @@
+.index-img {
+  background-image: url("../resources/index-user.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  justify-content: end;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+.title1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+* {
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+.red-placeholder {
+  input::-webkit-input-placeholder {
+    color: red !important;
+  }
+}
+
+.cnct-btn {
+  width: 20px;
+  height: 20px;
+}
+
+.title2 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.logo {
+  background-image: url("../resources/travelpedia.jpg");
+  height: 70px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.l-out:hover {
+  cursor: pointer;
+}
+
+.slider {
+  overflow: hidden;
+  width: 65vw;
+  height: 65vh;
+  position: absolute;
+  top: 30vh;
+  left: 0;
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slider 14s infinite;
+}
+
+.slider .slide:nth-child(1) {
+  background-image: url("../resources/user-index-carousel/Group\ 1.svg");
+  animation-delay: 0s;
+  filter: drop-shadow(0px 2% 5% 0px rgba(0, 0, 0, 1));
+}
+
+.slider .slide:nth-child(2) {
+  background-image: url("../resources/user-index-carousel/Group\ 2.svg");
+  animation-delay: -3.5s;
+  filter: drop-shadow(0px 2% 5% 0px rgba(0, 0, 0, 1));
+}
+
+.slider .slide:nth-child(3) {
+  background-image: url("../resources/user-index-carousel/Group\ 3.svg");
+  animation-delay: -7s;
+  filter: drop-shadow(0px 2% 5% 0px rgba(0, 0, 0, 1));
+}
+
+.slider .slide:nth-child(4) {
+  background-image: url("../resources/user-index-carousel/Group\ 4.svg");
+  animation-delay: -10.5s;
+  filter: drop-shadow(0px 2% 5% 0px rgba(0, 0, 0, 1));
+}
+
+@keyframes slider {
+  0%,
+  20%,
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  25% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  95% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}
+
+.slider-status {
+  background-image: url("dot.png");
+}
+
+.comp-body {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.comp-body img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.comp-text {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  color: #fff;
+  padding: 20px;
+  text-align: right;
+}
+
+.dots-container {
+  position: relative;
+}
+
+.dots {
+  position: absolute;
+  z-index: 1; /* Set a lower z-index value */
+  top: 61vh;
+  left: 54%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #062284;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
