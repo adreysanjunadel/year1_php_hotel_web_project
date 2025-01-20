@@ -24,14 +24,14 @@ if(isset($_GET["e"])){
 
          $mail = new PHPMailer;
          $mail->IsSMTP();
-         $mail->Host = 'smtp.gmail.com';
+         $mail->Host = 'ENTER EMAIL PROTOCOL';
          $mail->SMTPAuth = true;
-         $mail->Username = 'xlr8adrsd@gmail.com';
-         $mail->Password = 'qrbo dovs uias nrpv';
+         $mail->Username = 'YOUR_EMAIL_ADDRESS';
+         $mail->Password = 'YOUR_3RD_PARTY_ACCESS_TOKEN';
          $mail->SMTPSecure = 'ssl';
-         $mail->Port = 465;
-         $mail->setFrom('xlr8adrsd@gmail.com', 'Reset Password');
-         $mail->addReplyTo('xlr8adrsd@gmail.com', 'Reset Password');
+         $mail->Port = 'PORT_NUMBER';
+         $mail->setFrom('ENTER_YOUR_EMAIL', 'Reset Password');
+         $mail->addReplyTo('ENTER_YOUR_EMAIL', 'Reset Password');
          $mail->addAddress($email);
          $mail->isHTML(true);
          $mail->Subject = 'Travelpedia Password Recovery Verification Code';

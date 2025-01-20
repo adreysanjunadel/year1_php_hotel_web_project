@@ -38,7 +38,7 @@ if(isset($_SESSION["u"])){
     $resort_address = $resort_data["no"].$resort_data["street1"].$resort_data["street2"];
     $resort_city = $resort_data["city_name"];
     $currency = "LKR";
-    $merchant_secret = 'MjI1NTE5MjcxNTcyMDU2MzQyOTM0MDA2MzQ3NDIwNTU0MjU5';
+    $merchant_secret = 'ENTER_YOUR_MERCHANT_SECRET_HERE';
 
     $array["booking_id"] = $booking_id;
     $array["resort_name"] = $resort_data["resort_name"];
